@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieDexV4</string>
+    <string name="back">BACK</string>
+    <string name="add">ADD</string>
+    <string name="search">SEARCH</string>
+    <string name="what_to_watch">WHAT TO WATCH</string>
+</resources>
