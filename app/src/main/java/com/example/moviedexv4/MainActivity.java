@@ -14,20 +14,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homemenu);
+
         configureADDButton();
+
     }
 
     private void configureADDButton(){
 
-        Button AddButton = (Button) findViewById(R.id.GoToAdd);
-        AddButton.setOnClickListener(new View.OnClickListener() {
+        Button addMovieButton = (Button) findViewById(R.id.GoToAdd);
+        addMovieButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,AddActivity.class));
+                startAddMovieActivity();
             }
         });
-
-
-
     }
+
+    private void startAddMovieActivity() {
+        Intent intent = new Intent(MainActivity.this, AddActivity.class);
+        startActivity(intent);
+    }
+
+
 }

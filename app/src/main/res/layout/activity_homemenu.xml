@@ -1,72 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    android:background="@drawable/backgroundphotov3"
-    app:layout_constraintBottom_toBottomOf="@id/GoToAdd"
-    app:layout_constraintEnd_toEndOf="@id/GoToAdd"
-    app:layout_constraintStart_toStartOf="@id/GoToAdd"
-    app:layout_constraintTop_toTopOf="@id/GoToAdd"
-    tools:context=".MainActivity">
-
-    <androidx.appcompat.widget.AppCompatButton
-
-        android:id="@+id/GoToAdd"
-        android:layout_width="266dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="533dp"
-        android:alpha="100"
-        android:background="@drawable/bg"
-        android:text="@string/add"
-        android:textColor="#EFEFEF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-
-        android:id="@+id/goToAdd"
-        android:layout_width="266dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="49dp"
-        android:alpha="100"
-        android:background="@drawable/bg"
-        android:text="@string/search"
-        android:textColor="#EFEFEF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/goToAdd2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GoToAdd"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <androidx.appcompat.widget.AppCompatButton
-
-        android:id="@+id/goToAdd2"
-        android:layout_width="266dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginEnd="49dp"
-        android:alpha="100"
-        android:background="@drawable/bg"
-        android:text="@string/what_to_watch"
-        android:textColor="#EFEFEF"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GoToAdd" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/backgroundphotov5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/GoToAdd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:text="@string/add"
+            android:textColor="#EFEFEF"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToAdd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/search"
+            android:textColor="#EFEFEF"
+            android:alpha="0"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToAdd2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:text="@string/what_to_watch"
+            android:textColor="#EFEFEF"
+            android:textSize="40sp" />
+
+
+
+    </LinearLayout>

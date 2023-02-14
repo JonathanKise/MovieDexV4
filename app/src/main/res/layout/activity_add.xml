@@ -2,25 +2,105 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".AddActivity"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vaporwavebackground"
+    tools:context="activities.AddActivity">
+
 
     <androidx.appcompat.widget.AppCompatButton
+
         android:id="@+id/BackButton"
         android:layout_width="91dp"
         android:layout_height="59dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="16dp"
+
+
         android:background="@drawable/bg"
-
         android:text="@string/back"
-
-
-        android:textColor="#EFEFEF"
+        android:textColor="#E3F2FD"
         app:icon="@drawable/bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SummitButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/bg"
+        android:text="Summit"
+        android:textColor="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:layout_editor_absoluteX="0dp"
+
+        />
+
+    <EditText
+        android:id="@+id/TitleButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:background="@drawable/bg"
+        android:hint="Select Title..."
+        android:padding="15dp"
+        android:textColorHint="#D4DACE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406"
+        tools:context=".CalButLogic" />
+
+
+    <EditText
+        android:id="@+id/WatchedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:background="@drawable/bg"
+        android:hint="Select Who Watched..."
+        android:padding="15dp"
+        android:textColorHint="#D4DACE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617"
+        tools:context=".CalButLogic" />
+
+    <EditText
+        android:id="@+id/dateButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:background="@drawable/bg"
+        android:hint="Select Date..."
+        android:padding="15dp"
+        android:textColorHint="#D4DACE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221"
+        tools:context=".CalButLogic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
